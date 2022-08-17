@@ -205,7 +205,7 @@
 
 	.m-search input {
 		color: rgba(255, 255, 255, .9);;
-		border: 0px !important;
+		border: 0 !important;
 		background-color: inherit;
 		padding: .67857143em 2.1em .67857143em 1em;
 	}

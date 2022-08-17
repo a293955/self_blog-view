@@ -1,12 +1,12 @@
 <template>
 	<header ref="header">
 		<div class="view">
-			<img ref="imgbg1" src="http://localhost/img/bg1.jpg" style="display: none;">
-			<div class="bg1" style="background-image: url('http://localhost/img/bg1.jpg');"></div>
-			<div class="bg2" style="background-image: url('http://localhost/img/bg2.jpg');"></div>
-			<div class="bg3" style="background-image: url('http://localhost/img/bg3.jpg');" v-show="loaded"></div>
+			<img ref="imgbg1" src="http://localhost/config/backiee-237117-landscape.jpg" style="display: none;">
+			<div class="bg1" style="background-image: url('http://localhost/config/backiee-237117-landscape.jpg');"></div>
+			<div class="bg2" style="background-image: url('http://localhost/config/backiee-169523-landscape.jpg');"></div>
+			<div class="bg3" style="background-image: url('http://localhost/config/backiee-206771-landscape.jpg');" v-show="loaded"></div>
 		</div>
-		<div class="text-malfunction" data-word="Naccl's Blog">
+		<div class="text-malfunction" data-word="xs's blog">
 			<div class="line"></div>
 		</div>
 		<div class="wrapper">
@@ -129,7 +129,7 @@
 		top: 40%;
 		left: 51.5%;
 		transform: translate(-50%, -50%) scale(2.5);
-		width: 220px;
+		width: 150px;
 		font-size: 34px;
 		font-family: sans-serif;
 		color: transparent;
@@ -137,7 +137,7 @@
 
 	.line {
 		position: absolute;
-		width: 200px;
+		width: 140px;
 		left: -1px;
 		height: 1px;
 		background: black;

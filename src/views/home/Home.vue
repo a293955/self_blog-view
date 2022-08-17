@@ -7,7 +7,7 @@
 <script>
 	import BlogList from "@/components/blog/BlogList";
 	import {getBlogList} from "@/api/home";
-	import {SET_IS_BLOG_TO_HOME} from "../../store/mutations-types";
+	import {SET_IS_BLOG_TO_HOME} from "@/store/mutations-types";
 
 	export default {
 		name: "Home",
