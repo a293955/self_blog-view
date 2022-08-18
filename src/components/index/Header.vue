@@ -1,10 +1,10 @@
 <template>
 	<header ref="header">
 		<div class="view">
-			<img ref="imgbg1" src="http://localhost/config/backiee-237117-landscape.jpg" style="display: none;">
-			<div class="bg1" style="background-image: url('http://localhost/config/backiee-237117-landscape.jpg');"></div>
-			<div class="bg2" style="background-image: url('http://localhost/config/backiee-169523-landscape.jpg');"></div>
-			<div class="bg3" style="background-image: url('http://localhost/config/backiee-206771-landscape.jpg');" v-show="loaded"></div>
+			<img ref="imgbg1" src="http://192.168.31.108/config/backiee-237117-landscape.jpg" style="display: none;">
+			<div class="bg1" style="background-image: url('http://192.168.31.108/config/backiee-237117-landscape.jpg');"></div>
+			<div class="bg2" style="background-image: url('http://192.168.31.108/config/backiee-169523-landscape.jpg');"></div>
+			<div class="bg3" style="background-image: url('http://192.168.31.108/config/backiee-206771-landscape.jpg');" v-show="loaded"></div>
 		</div>
 		<div class="text-malfunction" data-word="xs's blog">
 			<div class="line"></div>
@@ -12,8 +12,8 @@
 		<div class="wrapper">
 			<i class="ali-iconfont icon-down" @click="scrollToMain"></i>
 		</div>
-		<div class="wave1" style="background: url('http://localhost/img/wave1.png') repeat-x;"></div>
-		<div class="wave2" style="background: url('http://localhost/img/wave2.png') repeat-x;"></div>
+		<div class="wave1" style="background: url('http://192.168.31.108/img/wave1.png') repeat-x;"></div>
+		<div class="wave2" style="background: url('http://192.168.31.108/img/wave2.png') repeat-x;"></div>
 	</header>
 </template>
 
