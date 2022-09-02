@@ -1,7 +1,7 @@
 <template>
 	<header ref="header">
 		<div class="view">
-			<img ref="imgbg1" src="http://localhost/config/backiee-237117-landscape.jpg" style="display: none;">
+			<img ref="imgbg1" src="http://localhost/config/backiee-237117-landscape.jpg" style="display: none;" alt="">
 			<div class="bg1" style="background-image: url('http://localhost/config/backiee-237117-landscape.jpg');"></div>
 			<div class="bg2" style="background-image: url('http://localhost/config/backiee-169523-landscape.jpg');"></div>
 			<div class="bg3" style="background-image: url('http://localhost/config/backiee-206771-landscape.jpg');" v-show="loaded"></div>

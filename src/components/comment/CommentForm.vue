@@ -9,7 +9,7 @@
 			<el-input :class="'textarea'" type="textarea" :rows="5" v-model="commentForm.content" placeholder="评论千万条，友善第一条"
 			          maxlength="250" show-word-limit :validate-event="false"></el-input>
 			<div class="el-form-item el-form-item--small emoji">
-				<img src="http://192.168.31.108/img/1.png" @click="showEmojiBox">
+				<img src="http://localhost/img/1.png" @click="showEmojiBox" alt="">
 				<div class="mask" v-show="emojiShow" @click="hideEmojiBox"></div>
 				<div class="emoji-box" v-show="emojiShow">
 					<div class="emoji-title">
@@ -17,28 +17,28 @@
 					</div>
 					<div class="emoji-wrap" v-show="activeEmojiTab===0">
 						<div class="emoji-list" v-for="(img,index) in tvMapper" :key="index" @click="insertEmoji(img.name)">
-							<img :src="img.src" :title="img.name">
+							<img :src="img.src" :title="img.name" alt="">
 						</div>
 					</div>
 					<div class="emoji-wrap" v-show="activeEmojiTab===1">
 						<div class="emoji-list" v-for="(img,index) in aruMapper" :key="index" @click="insertEmoji(img.name)">
-							<img :src="img.src" :title="img.name">
+							<img :src="img.src" :title="img.name" alt="">
 						</div>
 					</div>
 					<div class="emoji-wrap" v-show="activeEmojiTab===2">
 						<div class="emoji-list" v-for="(img,index) in paopaoMapper" :key="index" @click="insertEmoji(img.name)">
-							<img :src="img.src" :title="img.name">
+							<img :src="img.src" :title="img.name" alt="">
 						</div>
 					</div>
 					<div class="emoji-tabs">
 						<a class="tab-link" :class="{'on':activeEmojiTab===0}" @click="activeEmojiTab=0">
-							<img src="http://192.168.31.108/emoji/1.png">
+							<img src="http://localhost/emoji/1.png" alt="">
 						</a>
 						<a class="tab-link" :class="{'on':activeEmojiTab===1}" @click="activeEmojiTab=1">
-							<img src="http://192.168.31.108/emoji/2.png">
+							<img src="http://localhost/emoji/2.png" alt="">
 						</a>
 						<a class="tab-link" :class="{'on':activeEmojiTab===2}" @click="activeEmojiTab=2">
-							<img src="http://192.168.31.108/img/1.png">
+							<img src="http://localhost/img/1.png" alt="">
 						</a>
 					</div>
 				</div>

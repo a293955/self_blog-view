@@ -23,7 +23,7 @@ export default {
 		const token = adminToken ? adminToken : (blogToken ? blogToken : '')
 
 		function replaceEmoji(comment, emoji) {
-			comment.content = comment.content.replace(new RegExp(emoji.reg, 'g'), `<img src="${emoji.src}">`)
+			comment.content = comment.content.replace(new RegExp(emoji.reg, 'g'), `<img src="${emoji.src}" alt="">`)
 		}
 
 		function convertEmoji(comment) {

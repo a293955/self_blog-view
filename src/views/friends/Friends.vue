@@ -8,7 +8,7 @@
 				<a :href="item.website" target="_blank" rel="external nofollow noopener" class="card" :style="randomRGB()"
 				   v-for="(item,index) in friendList" :key="index" @click="addViews(item.nickname)">
 					<div class="image">
-						<img :src="item.avatar" onerror="this.src = '/img/error.png'">
+						<img :src="item.avatar" onerror="this.src = '/img/error.png'" alt="">
 					</div>
 					<div class="content">
 						<div class="header">{{ item.nickname }}</div>
@@ -80,7 +80,7 @@
 <style scoped>
 	.card .image {
 		width: 70px !important;
-		margin: 10px auto 0px;
+		margin: 10px auto 0;
 		background: unset !important;
 	}
 
