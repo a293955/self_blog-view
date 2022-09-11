@@ -120,10 +120,9 @@ export default {
               this.msgSuccess(res.msg)
               this.$router.push('/login')
             }
-            if (res.msg === 500) {
-              this.$message({type: "error", message: res.msg})
+            if (res.code === 500) {
+              this.msgError(res.msg)
             }
-            this.$message({type: "error", message: "用户名已存在！"})
           })
         }
       })
