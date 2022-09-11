@@ -6,6 +6,11 @@ Vue.use(VueRouter)
 
 const routes = [
 	{
+		path: '/register',
+		component: () => import('@/views/Register'),
+		meta: {title: '注册'}
+	},
+	{
 		path: '/login',
 		component: () => import('@/views/Login'),
 		meta: {title: '登录'}

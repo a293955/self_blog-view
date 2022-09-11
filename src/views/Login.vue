@@ -6,16 +6,16 @@
 				<img src="/img/avatar.jpg" alt="">
 			</div>
 			<!--登录表单-->
-			<el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" class="login_form">
+			<el-form ref="loginFormRef" :model="loginForm" class="login_form">
 				<el-form-item prop="username">
-					<el-input v-model="loginForm.username" prefix-icon="el-icon-user-solid"></el-input>
+					<el-input v-model="loginForm.username" prefix-icon="el-icon-user-solid" placeholder="用户名"></el-input>
 				</el-form-item>
 				<el-form-item prop="password">
-					<el-input v-model="loginForm.password" prefix-icon="el-icon-lock" show-password @keyup.native.enter="login"></el-input>
+					<el-input v-model="loginForm.password" prefix-icon="el-icon-lock" show-password @keyup.native.enter="login" placeholder="密码"></el-input>
 				</el-form-item>
 				<el-form-item class="btns">
 					<el-button type="primary" @click="login">登录</el-button>
-					<el-button type="info" @click="resetLoginForm">重置</el-button>
+					<el-button type="primary" @click="register">注册</el-button>
 				</el-form-item>
 			</el-form>
 		</div>
@@ -32,22 +32,22 @@
 				loginForm: {
 					username: '',
 					password: ''
-				},
-				loginFormRules: {
-					username: [
-						{required: true, message: '请输入用户名', trigger: 'blur'},
-					],
-					password: [
-						{required: true, message: '请输入密码', trigger: 'blur'},
-					]
 				}
 			}
 		},
 		methods: {
-			resetLoginForm() {
-				this.$refs.loginFormRef.resetFields();
-			},
+      register() {
+        this.$router.push("/register")
+      },
 			login() {
+        if (this.loginForm.username === '') {
+          this.$message({ type: "error", message: "用户名不能为空" });
+          return false;
+        }
+        if (this.loginForm.password === '') {
+          this.$message({ type: "error", message: "密码不能为空" });
+          return false;
+        }
 				this.$refs.loginFormRef.validate(valid => {
 					if (valid) {
 						login(this.loginForm).then(res => {
@@ -116,6 +116,6 @@
 
 	.btns {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
 	}
 </style>
