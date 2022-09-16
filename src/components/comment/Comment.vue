@@ -70,9 +70,6 @@
 		left: 34px;
 		top: 47px;
 		bottom: 0;
-		border-style: solid;
-		border-width: 0 0 0 1px;
-		border-color: #e0e0e0;
 	}
 
 	.ui.threaded.comments .comment .comments {
