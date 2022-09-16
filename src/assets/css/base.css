@@ -204,11 +204,11 @@ footer {
 }
 
 .m-box:hover {
-    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2), 0 2px 4px 0px rgba(0, 0, 0, 0.2), 0 4px 8px 0px rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
 }
 
 .m-box:active {
-    box-shadow: 0 1px 2px 0px rgba(72, 219, 251, 0.3), 0 2px 4px 0px rgba(72, 219, 251, 0.3), 0 4px 8px 0px rgba(72, 219, 251, 0.3), 0 8px 16px 0px rgba(72, 219, 251, 0.3) !important;
+    box-shadow: 0 1px 2px 0 rgba(72, 219, 251, 0.3), 0 2px 4px 0 rgba(72, 219, 251, 0.3), 0 4px 8px 0 rgba(72, 219, 251, 0.3), 0 8px 16px 0 rgba(72, 219, 251, 0.3) !important;
 }
 
 @media (max-width: 768px) {
