@@ -75,7 +75,7 @@
 </script>
 
 <style scoped>
-	@import "../../assets/css/badge.css";
+	@import "../../../public/css/badge.css";
 
 	.github-badge a {
 		color: #fff;

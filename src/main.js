@@ -3,11 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 //自定义css
-import './assets/css/base.css'
+import '../public/css/base.css'
 //阿里icon
-import './assets/css/icon/iconfont.css'
+import "./assets/icon/iconfont.css"
 //typo.css
-import "./assets/css/typo.css";
+import "../public/css/typo.css";
 //semantic-ui
 import 'semantic-ui-css/semantic.min.css'
 //element-ui
